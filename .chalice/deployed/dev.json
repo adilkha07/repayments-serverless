@@ -1,0 +1,22 @@
+{
+  "resources": [
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::715978286709:role/repayments-serverless-dev",
+      "role_name": "repayments-serverless-dev"
+    },
+    {
+      "name": "index",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-south-1:715978286709:function:repayments-serverless-dev-index"
+    },
+    {
+      "name": "index-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "repayments-serverless-dev-index-event"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
